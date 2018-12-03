@@ -108,7 +108,7 @@ define(function () {
         var digitCount = getDigitCount(strint);
         var carry = 0;
         var leadingZeros = 0;
-        for(var i=0; i<digitCount; i++) {
+        for(var i=0; i <= digitCount; i++) {
             var digitResult = (Number(getDigit(strint, i)) * digit) + carry;
             carry = 0;
             while(digitResult >= 10) {
